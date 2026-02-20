@@ -8,7 +8,6 @@ import { IoPlay } from "react-icons/io5";
 import { MdReplay } from "react-icons/md";
 import { VscMusic } from "react-icons/vsc";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const Player = () => {
     const actualSong = useSelector((curr) => {
