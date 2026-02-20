@@ -59,7 +59,10 @@ const BodyM = () => {
                     </div>
                 </div>
                 <div className="mt-3">
-                    <h6>Nuove uscite - cliccabili</h6>
+                    <h6>
+                        Nuove uscite -{" "}
+                        <span style={{ color: "#00D052" }}>cliccabili</span>
+                    </h6>
                     <AutoGen />
                 </div>
                 <div className="pt-2">
