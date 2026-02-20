@@ -52,7 +52,7 @@ const Player = () => {
                         <MdReplay />
                     </button>
                 </div>
-                {!actualSong && (
+                {(!actualSong || actualSong.length === 0) && (
                     <div
                         className="text-center w-100 py-2 d-none d-md-block"
                         style={{ backgroundColor: "#4d4d4d", maxWidth: "35%" }}>
@@ -72,7 +72,7 @@ const Player = () => {
                         </svg>
                     </div>
                 )}
-                {actualSong && (
+                {actualSong && actualSong.length !== 0 && (
                     <div
                         className="text-center w-100 py-2 d-none d-md-block"
                         style={{ backgroundColor: "#4d4d4d", maxWidth: "35%" }}>
