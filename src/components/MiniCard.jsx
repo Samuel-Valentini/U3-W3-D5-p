@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { SAVE_SONG } from "../redux/actions/actions";
 
 const MiniCard = (props) => {
     const dispatch = useDispatch();
@@ -6,7 +7,16 @@ const MiniCard = (props) => {
     return (
         <>
             <div>
-                <button className="zero">
+                <button
+                    onClick={() => {
+                        if (props.id && props.arrayName) {
+                            dispatch({
+                                type: SAVE_SONG,
+                                payload: [props.id, props.arrayName],
+                            });
+                        }
+                    }}
+                    className="zero">
                     <img
                         className="w-100 border-0 rounded-3"
                         src={props.imgSrc}

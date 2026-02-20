@@ -11,19 +11,3 @@ export const actionGetData2 = (data) => {
 };
 
 export const SAVE_SONG = "SAVE_SONG";
-
-// export const getActionSearch = (query) => {
-//     return async (dispatch) => {
-//         try {
-//             const response = await fetch(baseEndpoint + query + "&limit=20");
-//             if (response.ok) {
-//                 const { data } = await response.json();
-//                 dispatch(actionSearch(data));
-//             } else {
-//                 alert("Error fetching results");
-//             }
-//         } catch (error) {
-//             console.log(error);
-//         }
-//     };
-// };

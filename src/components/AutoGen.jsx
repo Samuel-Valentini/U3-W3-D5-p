@@ -46,6 +46,8 @@ const AutoGen = () => {
                                             " - " +
                                             song.artist.name
                                         }
+                                        arrayName={firstArray}
+                                        id={song.id}
                                     />
                                 );
                             })}
@@ -63,6 +65,8 @@ const AutoGen = () => {
                                             " - " +
                                             song.artist.name
                                         }
+                                        arrayName={firstArray}
+                                        id={song.id}
                                     />
                                 );
                             })}
@@ -82,6 +86,8 @@ const AutoGen = () => {
                                         " - " +
                                         song.artist.name
                                     }
+                                    arrayName={secondArray}
+                                    id={song.id}
                                 />
                             );
                         })}
@@ -99,6 +105,8 @@ const AutoGen = () => {
                                             " - " +
                                             song.artist.name
                                         }
+                                        arrayName={secondArray}
+                                        id={song.id}
                                     />
                                 );
                             })}
@@ -116,6 +124,8 @@ const AutoGen = () => {
                                             " - " +
                                             song.artist.name
                                         }
+                                        arrayName={secondArray}
+                                        id={song.id}
                                     />
                                 );
                             })}

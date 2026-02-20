@@ -1,14 +1,17 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
 import localStorage from "redux-persist/lib/storage";
-import { dataReducer } from "../reducers/reducers";
+import { dataReducer, saveSongReducer } from "../reducers/reducers";
 
 const persistConfig = {
     storage: localStorage,
     key: "root",
 };
 
-const superReducer = combineReducers({ data: dataReducer });
+const superReducer = combineReducers({
+    data: dataReducer,
+    song: saveSongReducer,
+});
 
 const persistedReducer = persistReducer(persistConfig, superReducer);
 
