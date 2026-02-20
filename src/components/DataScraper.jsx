@@ -4,8 +4,8 @@ import { actionGetData, actionGetData2 } from "../redux/actions/actions";
 
 const DataScraper = () => {
     const dispatch = useDispatch();
-    getData("queen", actionGetData, dispatch);
-    getData("pink floyd", actionGetData2, dispatch);
+    getData("love", actionGetData, dispatch);
+    getData("wanna", actionGetData2, dispatch);
 
     return <></>;
 };
