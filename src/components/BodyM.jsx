@@ -1,5 +1,8 @@
+import { Col, Container, Row } from "react-bootstrap";
+import AutoGen from "./AutoGen";
 import MainCard from "./MainCard";
 import MiniCard from "./MiniCard";
+import PowerLink from "./PowerLink";
 
 const BodyM = () => {
     return (
@@ -53,6 +56,65 @@ const BodyM = () => {
                             />
                         </div>
                     </div>
+                </div>
+                <div>
+                    <h6>Nuove uscite</h6>
+                    <AutoGen />
+                </div>
+                <div className="pt-2">
+                    <h6>Altro da esplorare</h6>
+                    <Container fluid>
+                        <Row className="row-cols-1 row-cols-md-3 pt-2 pb-4">
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Esplora per genere"
+                                    link="/esplora"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink text="Worldwide" link="/worldwide" />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Video musicali"
+                                    link="/video"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink text="Decenni" link="/decenni" />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Classifiche"
+                                    link="/classifiche"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Nuovi artisti"
+                                    link="/nuovi-artisti"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Attività e stati d'animo"
+                                    link="/animo"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Audio spaziale"
+                                    link="/spaziale"
+                                />
+                            </Col>
+                            <Col className="p-0">
+                                <PowerLink
+                                    text="Hit del passato"
+                                    link="/passato"
+                                />
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
         </>
