@@ -10,6 +10,8 @@ export const actionGetData2 = (data) => {
     return { type: GET_DATA_2, payload: data };
 };
 
+export const SAVE_SONG = "SAVE_SONG";
+
 // export const getActionSearch = (query) => {
 //     return async (dispatch) => {
 //         try {
