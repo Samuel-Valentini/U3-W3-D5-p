@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { PiLineVerticalThin } from "react-icons/pi";
 
 const Foot = () => {
+    console.log(
+        "cliccando sui titoli caricati tramite api il titolo viene mostrato nel player",
+    );
     return (
         <>
             <div className="pb-5" style={{ fontSize: "0.7rem" }}>

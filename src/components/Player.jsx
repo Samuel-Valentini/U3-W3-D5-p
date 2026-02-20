@@ -14,8 +14,8 @@ const Player = () => {
         return curr.song?.actual ?? [];
     });
 
-    console.log("actualsong");
-    console.log(actualSong);
+    // console.log("actualsong");
+    // console.log(actualSong);
 
     return (
         <>
