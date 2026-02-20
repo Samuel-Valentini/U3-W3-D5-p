@@ -9,7 +9,7 @@ const BodyM = () => {
     return (
         <>
             <div className="pt-5 px-4">
-                <h1>Novità</h1>
+                <h1 className="pt-2">Novità</h1>
                 <hr />
                 <div className="d-flex gap-3" style={{ minWidth: "550px" }}>
                     <MainCard
