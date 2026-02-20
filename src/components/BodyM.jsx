@@ -3,6 +3,7 @@ import AutoGen from "./AutoGen";
 import MainCard from "./MainCard";
 import MiniCard from "./MiniCard";
 import PowerLink from "./PowerLink";
+import Foot from "./Foot";
 
 const BodyM = () => {
     return (
@@ -116,6 +117,11 @@ const BodyM = () => {
                         </Row>
                     </Container>
                 </div>
+            </div>
+            <div
+                className="pt-4 px-4 pb-4"
+                style={{ backgroundColor: "#323232" }}>
+                <Foot />
             </div>
         </>
     );
