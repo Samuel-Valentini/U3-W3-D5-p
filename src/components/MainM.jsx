@@ -7,7 +7,7 @@ const MainM = () => {
             <div className="d-md-none fixed-bottom m-0">
                 <Player className="" />
             </div>
-            <div className="position-absolute d-none d-md-block fixed-top m-0">
+            <div className=" d-none d-md-block  m-0 sticky-top">
                 <Player className="" />
             </div>
             <BodyM className="" />
