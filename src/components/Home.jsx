@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import NavbarM from "./NavbarM";
+import MainM from "./MainM";
 
 const Home = () => {
     return (
@@ -10,7 +11,9 @@ const Home = () => {
                     style={{ backgroundColor: "#252526" }}>
                     <NavbarM />
                 </Col>
-                <Col className="bg-warning">Main</Col>
+                <Col className="p-0" style={{ backgroundColor: "#1f1f1f" }}>
+                    <MainM />
+                </Col>
             </Row>
         </Container>
     );
