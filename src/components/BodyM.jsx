@@ -8,7 +8,7 @@ import Foot from "./Foot";
 const BodyM = () => {
     return (
         <>
-            <div className="pt-4 px-4">
+            <div className="pt-5 px-4">
                 <h1>Novità</h1>
                 <hr />
                 <div className="d-flex gap-3" style={{ minWidth: "550px" }}>
