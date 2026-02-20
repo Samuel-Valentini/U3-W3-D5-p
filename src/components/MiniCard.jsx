@@ -8,6 +8,11 @@ const MiniCard = (props) => {
                     alt={props.imgAlt}
                 />
                 <div style={{ fontSize: "0.7rem" }}>{props.text}</div>
+                {props.artist && (
+                    <div className="mb-2" style={{ fontSize: "0.7rem" }}>
+                        {props.artist}
+                    </div>
+                )}
             </div>
         </>
     );

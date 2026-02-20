@@ -1,13 +1,6 @@
-// url è l'url a cui fare la richiesta
-// auth è l'autorizzazione
-// setData è la funzione definita tramite l'hook useState
-
-const getData = (url, auth, setData) => {
-    fetch(url, {
-        headers: {
-            Authorization: `${auth}`,
-        },
-    })
+const getData = (query, func, dispatch) => {
+    const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=`;
+    fetch(url + query)
         .then((res) => {
             if (res.ok) {
                 return res.json();
@@ -18,7 +11,7 @@ const getData = (url, auth, setData) => {
             }
         })
         .then((res) => {
-            setData(res);
+            dispatch(func(res));
             // console.log(res);
         })
         .catch((e) => {

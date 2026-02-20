@@ -5,6 +5,7 @@ import { persistedStore, store } from "./redux/store/store";
 import { PersistGate } from "redux-persist/integration/react";
 import "./App.css";
 import Home from "./components/Home";
+import DataScraper from "./components/DataScraper";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Provider store={store}>
                 <PersistGate persistor={persistedStore}>
                     <BrowserRouter>
+                        <DataScraper />
                         <Routes>
                             <Route path="/" element={<Home />} />
                         </Routes>
