@@ -20,6 +20,7 @@ const AutoGen = () => {
                 {firstArray.slice(0, 3).map((song) => {
                     return (
                         <MiniCard
+                            key={song.id}
                             text={song.title_short}
                             artist={song.artist.name}
                             imgSrc={song.artist.picture_medium}
@@ -32,6 +33,7 @@ const AutoGen = () => {
                     {firstArray.slice(3, 4).map((song) => {
                         return (
                             <MiniCard
+                                key={song.id}
                                 text={song.title_short}
                                 artist={song.artist.name}
                                 imgSrc={song.artist.picture_medium}
@@ -46,6 +48,7 @@ const AutoGen = () => {
                     {firstArray.slice(4, 5).map((song) => {
                         return (
                             <MiniCard
+                                key={song.id}
                                 text={song.title_short}
                                 artist={song.artist.name}
                                 imgSrc={song.artist.picture_medium}
@@ -62,6 +65,7 @@ const AutoGen = () => {
                 {secondArray.slice(0, 3).map((song) => {
                     return (
                         <MiniCard
+                            key={song.id}
                             text={song.title_short}
                             artist={song.artist.name}
                             imgSrc={song.artist.picture_medium}
@@ -74,6 +78,7 @@ const AutoGen = () => {
                     {secondArray.slice(3, 4).map((song) => {
                         return (
                             <MiniCard
+                                key={song.id}
                                 text={song.title_short}
                                 artist={song.artist.name}
                                 imgSrc={song.artist.picture_medium}
@@ -88,6 +93,7 @@ const AutoGen = () => {
                     {secondArray.slice(4, 5).map((song) => {
                         return (
                             <MiniCard
+                                key={song.id}
                                 text={song.title_short}
                                 artist={song.artist.name}
                                 imgSrc={song.artist.picture_medium}
